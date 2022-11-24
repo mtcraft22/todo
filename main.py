@@ -9,8 +9,9 @@ class todo_main:
         self.hasnotified = tkinter.IntVar()
         self.priority_level = tkinter.StringVar()
 
-        self.listanotis = tkinter.Canvas(self.root, bg="white", width=200, height=10000).grid(row=0, column=0, rowspan=1000, padx=5,
-                                                                            pady=5)
+        self.listanotis = tkinter.Canvas(self.root, bg="white", width=200, height=10000).grid(row=0, column=0,
+                                                                                              rowspan=1000, padx=5,
+                                                                                              pady=5)
 
         self.tittle_label = tkinter.Label(self.root, text="  Nombre: ")
         self.tittle_label.grid(row=0, column=1, padx=2)
