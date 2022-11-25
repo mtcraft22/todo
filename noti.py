@@ -1,4 +1,4 @@
-import tkinter
+import tkinter, checknotifications,threading
 
 notis = []
 
@@ -12,7 +12,6 @@ class noti:
         self.label = None
         self.info = None
         notis.append(self)
-
     def make_label(self, canvas):
         self.label = tkinter.Label(canvas, bg="white", text=self.tittle)
         self.label.grid(row=notis.index(notis[-1]) + 1, column=0)
