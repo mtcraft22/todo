@@ -13,4 +13,4 @@ def send_noti_whit_date(y,mo,d,h,m,s):
         if str(fecha_actual_texto) == str(fecha_noti_texto):
             noti.show_toast("hola", "lo tienes pendiente", threaded=True)
 
-send_noti_whit_date(2022,11,30,16,39,0)
+#send_noti_whit_date(2022,11,30,16,39,0)

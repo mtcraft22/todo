@@ -196,7 +196,8 @@ class CTkBaseClass(tkinter.Frame, CTkAppearanceModeBaseClass, CTkScalingBaseClas
         if master_widget is None:
             master_widget = self.master
 
-        if isinstance(master_widget, (windows.widgets.core_widget_classes.CTkBaseClass, windows.CTk, windows.CTkToplevel)):
+        if isinstance(master_widget, (
+        windows.widgets.core_widget_classes.CTkBaseClass, windows.CTk, windows.CTkToplevel)):
             if master_widget.cget("fg_color") is not None and master_widget.cget("fg_color") != "transparent":
                 return master_widget.cget("fg_color")
 
